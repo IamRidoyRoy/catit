@@ -17,6 +17,6 @@ class Post(models.Model):
 
 
 class Vote(models.Model):
-    vote= models.ForeignKey(User, on_delete=models.CASCADE)
+    voter = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     
